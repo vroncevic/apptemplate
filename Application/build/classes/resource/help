@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>Application tool ver.1.0.b</h1>
+<p>This is a part of Software support Frobas IT.</p>
+<h2>Usage</h2>
+<p>Add information text about Application.</p>
+<ul>
+  <li>Option 1</li>
+  <li>Option 2</li>
+  <li>Option 3</li>
+</ul>
+<p>Last session will be saved in local App configuration.</p>
+</body>
+</html>
