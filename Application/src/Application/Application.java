@@ -1,9 +1,9 @@
 /**
  * Application.java
  * Created on Feb 25, 2016, 2:17:52 PM
- * Copyright(c) Frobas d.o.o.
+ * Copyright(c) Frobas doo
  */
-package application;
+package Application;
 
 import com.Utilities.AboutContainer;
 import com.Utilities.HelpContainer;

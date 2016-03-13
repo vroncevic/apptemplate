@@ -1,9 +1,9 @@
 /**
  * AppContainer.java
  * Created on Feb 25, 2016, 7:03:13 PM
- * Copyright(c) Frobas d.o.o.
+ * Copyright(c) Frobas doo
  */
-package application;
+package Application;
 
 import com.Utilities.AboutContainer;
 import com.Utilities.HelpContainer;

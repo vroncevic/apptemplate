@@ -1,9 +1,9 @@
 /**
  * ApplicationGUI.java
  * Created on Feb 25, 2016, 2:17:52 PM
- * Copyright(c) Frobas d.o.o.
+ * Copyright(c) Frobas doo
  */
-package application;
+package Application;
 
 import com.Utilities.About.About;
 import com.Utilities.Help.Help;
@@ -32,7 +32,9 @@ public class ApplicationGUI extends javax.swing.JFrame {
         this.aboutui = new About(cont.getAbout());
         this.helpui = new Help(cont.getHelp());
         this.setting = new Settings(cont.getAbout().getAppName());
-        this.config = new ApplicationSession("." + AppStringsUtils.ApplicationName, AppStringsUtils.ApplicationName + ".cfg");
+        this.config = 
+                new ApplicationSession("." + AppStringsUtils.ApplicationName, 
+                        AppStringsUtils.ApplicationName + ".cfg");
         this.setting = (Settings) config.read(setting);
         this.appoperations = new AppOperations(this);
         this.appoperations.AppStart(cont);

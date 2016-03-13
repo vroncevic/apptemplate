@@ -1,9 +1,9 @@
 /**
  * AppClose.java
  * Created on Feb 25, 2016, 6:34:11 PM
- * Copyright(c) Frobas d.o.o.
+ * Copyright(c) Frobas doo
  */
-package application;
+package Application;
 
 import com.Utilities.Dialog;
 import com.Utilities.Logging;
@@ -12,7 +12,7 @@ import java.awt.Component;
 import javax.swing.JOptionPane;
 
 /**
- * Closing Application
+ * Application operations
  *
  * @author Vladimir Roncevic <vladimir.roncevic@frobas.com>
  */
@@ -25,7 +25,8 @@ public class AppOperations {
     }
 
     public void AppClose(ApplicationSession config, Settings setting) {
-        int status = dialog.ShowDialog("Exit " + AppStringsUtils.ApplicationName + " ?", "Confirm Exit!", JOptionPane.YES_NO_OPTION);
+        int status = dialog.ShowDialog("Exit " + AppStringsUtils.ApplicationName + 
+                " ?", "Confirm Exit!", JOptionPane.YES_NO_OPTION);
         if (status == JOptionPane.YES_OPTION) {
             config.write(setting);
             System.exit(0);
@@ -33,16 +34,14 @@ public class AppOperations {
     }
     
     public void AppStart(AppContainer cont) {
+        String Path = System.getProperty("user.dir");
         if (OSValidator.isUnix()) {
-            Logging.logging("Info", "Started " + AppStringsUtils.ApplicationName + " " + cont.getAbout().getAppName(),
-                    "/data/apps/logs/" + AppStringsUtils.ApplicationName + "/", AppStringsUtils.ApplicationName);
+            Path = AppStringsUtils.LOG_LIN;
         } else if (OSValidator.isWindows()) {
-            Logging.logging("Info", "Started " + AppStringsUtils.ApplicationName + " " + cont.getAbout().getAppName(),
-                    System.getProperty("user.home") + "/", AppStringsUtils.ApplicationName);
-        } else {
-            Logging.logging("Error", "Unsupported OS" + " " + cont.getAbout().getAppName(),
-                    System.getProperty("user.home") + "/", AppStringsUtils.ApplicationName);
-        }
+            Path = AppStringsUtils.LOG_WIN;
+        } 
+        Logging.logging("Info", "Started " + cont.getAbout().getAppName(),
+        Path, AppStringsUtils.ApplicationName);
     }
 
     public Dialog getDialog() {

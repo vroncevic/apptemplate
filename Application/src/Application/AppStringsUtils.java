@@ -1,9 +1,9 @@
 /**
  * AppStringsUtils.java
  * Created on Feb 25, 2016, 2:43:24 PM
- * Copyright(c) Frobas d.o.o.
+ * Copyright(c) Frobas doo
  */
-package application;
+package Application;
 
 import java.util.Calendar;
 
@@ -19,5 +19,7 @@ public class AppStringsUtils {
     public static String CompanyName = "Frobas " + CurrentYear;
     public static String DepartmentName = "Frobas IT Department " + CurrentYear;
     public static String ApplicationAboutInfo = "Frobas, www.frobas.com";
-    public static String ApplicationHelpInfo = "Help Topics WoLAN";
+    public static String ApplicationHelpInfo = "Help Topics";
+    public static String LOG_LIN = "/data/vm";
+    public static String LOG_WIN = "Z:\\vm\\";
 }
