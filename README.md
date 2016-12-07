@@ -21,10 +21,10 @@ This tool requires these other modules and libraries:
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2016 by www.frobas.com
+Copyright (C) 2016 by https://github.com/vroncevic/apptemplate
 
-This tool is free software; you can redistribute it and/or modify.
+This tool is free software; you can redistribute it and/or modify it.
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/apptemplate/master/java_logo.png)
-![alt tag](https://raw.githubusercontent.com/vroncevic/apptemplate/master/linux_logo_327_215.jpg)
+![alt tag](https://raw.githubusercontent.com/vroncevic/apptemplate/master/linux_logo.jpg)
 
