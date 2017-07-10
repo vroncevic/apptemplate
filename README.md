@@ -26,5 +26,5 @@ Copyright (C) 2016 by https://github.com/vroncevic/apptemplate
 This tool is free software; you can redistribute it and/or modify it.
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/apptemplate/master/java_logo.png)
-![alt tag](https://raw.githubusercontent.com/vroncevic/apptemplate/master/linux_logo.jpg)
+![alt tag](https://raw.githubusercontent.com/vroncevic/apptemplate/master/linux_logo.png)
 
